@@ -71,9 +71,9 @@ public class Steps {
 
     @Then("Mail should be submitted successfully")
     public void mail_should_be_submitted_successfully() {
-
-
+        gmailHomePage sign = gmailHomePage.getInstanceOfgmailHomePage(driver);
+        sign.sentOption();
+        sign.sentMessage();
     }
-
 
 }
