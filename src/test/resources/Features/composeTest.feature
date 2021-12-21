@@ -2,7 +2,6 @@
 #Date : 20-12-2021
 #Description : Test compose functionality in gmail
 
-@SmokeTest
 Feature: Test Compose Option in gmail
 
   Scenario: User should be able to compose mail in gmail

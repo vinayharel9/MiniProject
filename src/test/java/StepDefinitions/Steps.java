@@ -15,7 +15,6 @@ public class Steps {
 
     WebDriver driver = null;
 
-
     @Given("user navigates to gmail login page")
     public void user_navigates_to_gmail_login_page() {
 
@@ -26,7 +25,6 @@ public class Steps {
         driver.get("https://www.google.com/intl/en-GB/gmail/about/");
         sign.clickSignIn();
     }
-
 
     @And("enters valid username as {string} and password as {string}")
     public void entersValidUsernameAsAndPasswordAs(String emailId, String password) throws InterruptedException {

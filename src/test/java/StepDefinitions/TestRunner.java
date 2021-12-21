@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
         features="src/test/resources/Features",
         glue={"StepDefinitions"},
         monochrome = true,
-        plugin = {"pretty","html:target/HtmlReports"},
-        tags="@smokeTest"
+        plugin = {"pretty","html:target/HtmlReports"}
+
 )
 
 public class TestRunner {
