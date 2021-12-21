@@ -43,6 +43,7 @@ public class Steps {
         gmailHomePage sign = gmailHomePage.getInstanceOfgmailHomePage(driver);
         sign.validateComposeButton();
     }
+
     @When("User clicks on Compose Button")
     public void user_clicks_on_compose_button() {
         gmailHomePage sign = gmailHomePage.getInstanceOfgmailHomePage(driver);
@@ -53,14 +54,14 @@ public class Steps {
     public void enters_email_subject_as(String subject) {
         gmailHomePage sign = gmailHomePage.getInstanceOfgmailHomePage(driver);
         sign.subjectBox(subject);
-
     }
+
     @When("body as {string}")
     public void body_as(String message) {
         gmailHomePage sign = gmailHomePage.getInstanceOfgmailHomePage(driver);
         sign.MessageBox(message);
-
     }
+
     @And("sender as {string} and clicks on send button")
     public void senderAsAndClicksOnSendButton(String recipient)  {
         gmailHomePage sign = gmailHomePage.getInstanceOfgmailHomePage(driver);
